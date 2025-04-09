@@ -2,7 +2,6 @@ import pytest
 import requests
 import allure
 from config import BASE_URL
-
 @allure.suite("User Authentication")
 class TestUserAuthentication:
 
