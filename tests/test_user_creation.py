@@ -2,7 +2,6 @@ import pytest
 import requests
 import allure
 from config import BASE_URL
-from faker import Faker
 import json
 
 

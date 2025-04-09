@@ -2,10 +2,6 @@ import pytest
 import requests
 import allure
 from config import BASE_URL
-from faker import Faker
-
-fake = Faker()
-
 
 @allure.suite("User Authentication")
 class TestUserAuthentication:
@@ -16,9 +12,9 @@ class TestUserAuthentication:
         payload = create_user["user_data"]
         response = requests.post(url, json=payload)
 
-        assert response.status_code == 200, f"Expected status code 200, but got {response.status_code}"
+        assert response.status_code == 200, f"Expected status code 200, but got {response.status_code} - {response.text}"
         data = response.json()
-        assert data["success"] == True, "Expected success to be True"
+        assert data["success"] == True, f"Expected success to be True, but got {data.get('success')}"
         assert "accessToken" in data, "Response should contain accessToken"
         assert "refreshToken" in data, "Response should contain refreshToken"
         assert "user" in data, "Response should contain user"
@@ -34,7 +30,7 @@ class TestUserAuthentication:
         }
         response = requests.post(url, json=payload)
 
-        assert response.status_code == 401, f"Expected status code 401, but got {response.status_code}"
+        assert response.status_code == 401, f"Expected status code 401, but got {response.status_code} - {response.text}"
         data = response.json()
-        assert data["success"] == False, "Expected success to be False"
+        assert data["success"] == False, f"Expected success to be False, but got {data.get('success')}"
         assert data["message"] == "email or password are incorrect", "Expected message to be 'email or password are incorrect'"
