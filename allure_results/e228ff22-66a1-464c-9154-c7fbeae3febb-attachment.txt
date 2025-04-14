@@ -1,0 +1,8 @@
+INFO:api_utils:Пользователь 28ykzed@mail.ru успешно зарегистрирован.
+INFO:api_utils:Пользователь 28ykzed@mail.ru успешно авторизован.
+INFO:api_utils:Ответ сервера при авторизации: {'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmQyMGViOWVkMjgwMDAxYjVjMzVjMiIsImlhdCI6MTc0NDY0MjI4MywiZXhwIjoxNzQ0NjQzNDgzfQ.-sDQ3ZqT1iZCThaCatTNPj4yPu0pQZyN7FG9lZWW12w', 'refreshToken': '3aaa2a651ae0529bc5e951ac1d43a5ebdcd2665a4664a5532fb4dcaeb8f9f79325026cdde6a454e1', 'user': {'email': '28ykzed@mail.ru', 'name': 'pjYwvtuIEy'}}
+INFO:api_utils:Выполнение POST запроса к https://stellarburgers.nomoreparties.site/api/auth/register (попытка 1)
+INFO:api_utils:Выполнение PATCH запроса к https://stellarburgers.nomoreparties.site/api/auth/user (попытка 1)
+INFO:api_utils:Сообщение об ошибке: User with such email already exists
+INFO:api_utils:Проверено, что нельзя обновить email на существующий.
+INFO:api_utils:Пользователь 28ykzed@mail.ru успешно удален.

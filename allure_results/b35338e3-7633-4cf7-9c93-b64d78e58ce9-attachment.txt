@@ -1,0 +1,8 @@
+[32mINFO    [0m api_utils:conftest.py:39 Пользователь 28ykzed@mail.ru успешно зарегистрирован.
+[32mINFO    [0m api_utils:conftest.py:62 Пользователь 28ykzed@mail.ru успешно авторизован.
+[32mINFO    [0m api_utils:conftest.py:63 Ответ сервера при авторизации: {'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmQyMGViOWVkMjgwMDAxYjVjMzVjMiIsImlhdCI6MTc0NDY0MjI4MywiZXhwIjoxNzQ0NjQzNDgzfQ.-sDQ3ZqT1iZCThaCatTNPj4yPu0pQZyN7FG9lZWW12w', 'refreshToken': '3aaa2a651ae0529bc5e951ac1d43a5ebdcd2665a4664a5532fb4dcaeb8f9f79325026cdde6a454e1', 'user': {'email': '28ykzed@mail.ru', 'name': 'pjYwvtuIEy'}}
+[32mINFO    [0m api_utils:api_utils.py:19 Выполнение POST запроса к https://stellarburgers.nomoreparties.site/api/auth/register (попытка 1)
+[32mINFO    [0m api_utils:api_utils.py:19 Выполнение PATCH запроса к https://stellarburgers.nomoreparties.site/api/auth/user (попытка 1)
+[32mINFO    [0m api_utils:test_user_profile.py:124 Сообщение об ошибке: User with such email already exists
+[32mINFO    [0m api_utils:test_user_profile.py:126 Проверено, что нельзя обновить email на существующий.
+[32mINFO    [0m api_utils:conftest.py:82 Пользователь 28ykzed@mail.ru успешно удален.

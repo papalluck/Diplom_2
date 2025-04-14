@@ -1,0 +1,5 @@
+POST https://stellarburgers.nomoreparties.site/api/auth/register
+Headers: {'Content-Type': 'application/json'}
+Body: {'email': '2i4uhi1kkvxb5vc@mail.ru', 'password': 'tNeIkfBR', 'name': 'rbLssz'}
+Response Code: 200
+Response Body: {"success":true,"user":{"email":"2i4uhi1kkvxb5vc@mail.ru","name":"rbLssz"},"accessToken":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmQyMGU0OWVkMjgwMDAxYjVjMzViNCIsImlhdCI6MTc0NDY0MjI3NiwiZXhwIjoxNzQ0NjQzNDc2fQ.rKW9PxTDZ9xCdmLPE_neyg99PzFtdg6XBKvKRsmSubs","refreshToken":"26d1ce735b81e4165a82091e1307f98957798e5648ed27feb3a8f25a2c3791a5ff772295524461ef"}

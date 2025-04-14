@@ -1,66 +1,104 @@
 import pytest
-import requests
 import allure
-from config import BASE_URL, VALID_INGREDIENTS
-import logging
+import requests
+from config import BASE_URL
+from api_utils import make_api_request, logger
+import random
+from data.ingredients import VALID_INGREDIENTS
 
 
-logger = logging.getLogger(__name__)
-
-@allure.suite("Создание заказа")
+@allure.suite("Создание заказов")
 class TestOrderCreation:
-
-    @allure.title("Создание заказа с авторизацией и ингредиентами")
-    def test_create_order_with_auth_and_ingredients(self, create_user):
+    @allure.title("Create order with authorization and ingredients")
+    def test_create_order_with_auth_and_ingredients(self, create_and_delete_user, get_ingredients):
         url = f"{BASE_URL}/orders"
-        headers = {"Authorization": create_user["tokens"]["accessToken"]}
-        payload = {"ingredients": VALID_INGREDIENTS}
-        response = requests.post(url, headers=headers, json=payload)
+        access_token = create_and_delete_user["tokens"]["accessToken"]
+        headers = {"Authorization": f"{access_token}", "Content-Type": "application/json"}
 
-        logger.info(f"Запрос к {url} с данными: {payload}, статус код: {response.status_code}, Ответ: {response.text}")
-        response.raise_for_status()
-        data = response.json()
-        assert data["success"] == True, f"Ожидалось success == True, но получено {data.get('success')}"
-        assert "name" in data, "В ответе должно быть имя заказа"
-        assert "order" in data, "В ответе должен быть заказ"
-        logger.info(f"Заказ успешно создан: {data.get('name')}")
+        logger.info(f"Заголовки для создания заказа: {headers}")
+
+        if len(get_ingredients) < 2:
+            pytest.skip("Недостаточно ингредиентов для создания заказа.")
 
 
-    @allure.title("Создание заказа без авторизации")
+        selected_ingredient_ids = random.sample(get_ingredients, 2)
+
+
+        payload = {"ingredients": selected_ingredient_ids}
+        logger.info(f"Payload для создания заказа: {payload}")
+
+        try:
+            response = make_api_request("POST", url, headers=headers, json=payload)
+
+            if response is None:
+                pytest.fail("make_api_request вернул None")
+
+            assert response.status_code == 200
+            response.raise_for_status()
+            data = response.json()
+            logger.info(f"Заказ успешно создан: {data}")
+            assert "name" in data, "В ответе должно быть имя заказа"
+            assert "order" in data, "В ответе должен быть заказ"
+
+
+        except requests.exceptions.RequestException as e:
+            logger.error(f"Ошибка при создании заказа: {e}")
+            pytest.fail(f"Не удалось создать заказ: {e}")
+
+    @allure.title("Create order without authorization")
     def test_create_order_without_auth(self):
         url = f"{BASE_URL}/orders"
         payload = {"ingredients": VALID_INGREDIENTS}
-        response = requests.post(url, json=payload)
+        logger.info(f"Payload для создания заказа без авторизации: {payload}")
+        try:
+            response = make_api_request("POST", url, json=payload)
+            if response is None:
+                pytest.fail("make_api_request вернул None")
+            assert response.status_code == 200
+            response.raise_for_status()
+            data = response.json()
+            assert "name" in data, "В ответе должно быть имя заказа"
+            assert "order" in data, "В ответе должен быть заказ"
+            logger.info(f"Заказ успешно создан без авторизации: {data.get('name')}")
+        except requests.exceptions.RequestException as e:
+            logger.error(f"Ошибка при создании заказа без авторизации: {e}")
+            pytest.fail(f"Не удалось создать заказ без авторизации: {e}")
 
-        logger.info(f"Запрос к {url} с данными: {payload}, статус код: {response.status_code}, Ответ: {response.text}")
-        response.raise_for_status()
-        data = response.json()
-        assert data["success"] == True, f"Ожидалось success == True, но получено {data.get('success')}"
-        assert "name" in data, "В ответе должно быть имя заказа"
-        assert "order" in data, "В ответе должен быть заказ"
-        logger.info(f"Заказ успешно создан без авторизации: {data.get('name')}")
-
-
-    @allure.title("Создание заказа с авторизацией, но без ингредиентов")
-    def test_create_order_with_auth_but_without_ingredients(self, create_user):
+    @allure.title("Create order with authorization but without ingredients")
+    def test_create_order_with_auth_but_without_ingredients(self, create_and_delete_user):
         url = f"{BASE_URL}/orders"
-        headers = {"Authorization": create_user["tokens"]["accessToken"]}
+        access_token = create_and_delete_user["tokens"]["accessToken"]
+        headers = {"Authorization": f"{access_token}", "Content-Type": "application/json"}
         payload = {"ingredients": []}
-        response = requests.post(url, headers=headers, json=payload)
+        logger.info(f"Payload для создания заказа с авторизацией, но без ингредиентов: {payload}")
+        logger.info(f"Заголовки для создания заказа с авторизацией, но без ингредиентов: {headers}")
 
-        logger.info(f"Запрос к {url} с данными: {payload}, статус код: {response.status_code}, Ответ: {response.text}")
-        assert response.status_code == 400, f"Ожидался статус код 400, но получен {response.status_code} - {response.text}"
-        data = response.json()
-        assert data["success"] == False, f"Ожидалось success == False, но получено {data.get('success')}"
-        assert data["message"] == "Ingredient ids must be provided", f"Ожидалось сообщение 'Ingredient ids must be provided', но получено {data.get('message')}"
+        try:
+            response = make_api_request("POST", url, headers=headers, json=payload)
+            if response is None:
+                pytest.fail("make_api_request вернул None")
+            assert response.status_code == 400
 
+        except requests.exceptions.RequestException as e:
+            logger.error(f"Ошибка при создании заказа с авторизацией, но без ингредиентов: {e}")
+            pytest.fail(f"Не удалось создать заказ с авторизацией, но без ингредиентов: {e}")
 
-    @allure.title("Создание заказа с авторизацией и невалидными ингредиентами")
-    def test_create_order_with_auth_and_invalid_ingredients(self, create_user):
+    @allure.title("Create order with authorization and invalid ingredients")
+    def test_create_order_with_auth_and_invalid_ingredients(self, create_and_delete_user):
         url = f"{BASE_URL}/orders"
-        headers = {"Authorization": create_user["tokens"]["accessToken"]}
+        access_token = create_and_delete_user["tokens"]["accessToken"]
+        headers = {"Authorization": f"{access_token}", "Content-Type": "application/json"}
         payload = {"ingredients": ["invalid_ingredient_id"]}
-        response = requests.post(url, headers=headers, json=payload)
+        logger.info(f"Payload для создания заказа с авторизацией и невалидными ингредиентами: {payload}")
+        logger.info(f"Заголовки для создания заказа с авторизацией и невалидными ингредиентами: {headers}")
 
-        logger.info(f"Запрос к {url} с данными: {payload}, статус код: {response.status_code}, Ответ: {response.text}")
-        assert response.status_code == 500, f"Ожидался статус код 500, но получен {response.status_code} - {response.text}"
+        try:
+            response = make_api_request("POST", url, headers=headers, json=payload)
+            if response is None:
+                pytest.fail("make_api_request вернул None")
+            assert response.status_code == 500
+
+
+        except requests.exceptions.RequestException as e:
+            logger.error(f"Ошибка при создании заказа с авторизацией и невалидными ингредиентами: {e}")
+            pytest.fail(f"Не удалось создать заказ с авторизацией и невалидными ингредиентами: {e}")

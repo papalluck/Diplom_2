@@ -1,0 +1,6 @@
+[32mINFO    [0m api_utils:conftest.py:39 Пользователь 9u99ndo1yjje230@mail.ru успешно зарегистрирован.
+[32mINFO    [0m api_utils:conftest.py:62 Пользователь 9u99ndo1yjje230@mail.ru успешно авторизован.
+[32mINFO    [0m api_utils:conftest.py:63 Ответ сервера при авторизации: {'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmQyMGU1OWVkMjgwMDAxYjVjMzViNiIsImlhdCI6MTc0NDY0MjI3OCwiZXhwIjoxNzQ0NjQzNDc4fQ.xrF-xNXhjLWf7FD2Wjg6u7YW2s5xqahcrqtP6eeFAV4', 'refreshToken': '583817b2aabeae934778764eb110213236ef8da3945e355cf26b23bdb1bb6d96d07d2a3356180d65', 'user': {'email': '9u99ndo1yjje230@mail.ru', 'name': 'FwVCGgSEz'}}
+[32mINFO    [0m api_utils:api_utils.py:19 Выполнение POST запроса к https://stellarburgers.nomoreparties.site/api/auth/login (попытка 1)
+[32mINFO    [0m api_utils:test_user_login.py:30 Успешный вход пользователя 9u99ndo1yjje230@mail.ru.
+[32mINFO    [0m api_utils:conftest.py:82 Пользователь 9u99ndo1yjje230@mail.ru успешно удален.

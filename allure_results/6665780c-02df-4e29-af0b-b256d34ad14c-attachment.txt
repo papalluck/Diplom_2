@@ -1,0 +1,6 @@
+[32mINFO    [0m api_utils:conftest.py:39 Пользователь yonrnac1631s@mail.ru успешно зарегистрирован.
+[32mINFO    [0m api_utils:conftest.py:62 Пользователь yonrnac1631s@mail.ru успешно авторизован.
+[32mINFO    [0m api_utils:conftest.py:63 Ответ сервера при авторизации: {'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmQyMGU4OWVkMjgwMDAxYjVjMzViYyIsImlhdCI6MTc0NDY0MjI4MCwiZXhwIjoxNzQ0NjQzNDgwfQ.Eg1WVKDrFX-B4TJojX5kPQnDLK33Gzj9YJLriMIG6Xw', 'refreshToken': 'c07f816f655df38a3c11642f9c11e7b3d1d1892155716829cbca2f884323221672526a4c45077ffa', 'user': {'email': 'yonrnac1631s@mail.ru', 'name': 'jzCRwH'}}
+[32mINFO    [0m api_utils:api_utils.py:19 Выполнение GET запроса к https://stellarburgers.nomoreparties.site/api/auth/user (попытка 1)
+[32mINFO    [0m api_utils:test_user_profile.py:28 Успешно получен профиль пользователя yonrnac1631s@mail.ru (с авторизацией).
+[32mINFO    [0m api_utils:conftest.py:82 Пользователь yonrnac1631s@mail.ru успешно удален.
