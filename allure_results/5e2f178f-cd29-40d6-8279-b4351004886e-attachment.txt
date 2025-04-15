@@ -1,0 +1,14 @@
+POST https://stellarburgers.nomoreparties.site/api/orders
+Headers: {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmUyNTFhOWVkMjgwMDAxYjVjNGQ5YyIsImlhdCI6MTc0NDcwODg5MCwiZXhwIjoxNzQ0NzEwMDkwfQ.1WBVbfUcIQ_95ajl3Wo1woRWPp2LVwFDlOXfmL1KbGg', 'Content-Type': 'application/json'}
+Body: {'ingredients': ['invalid_ingredient_id']}
+Response Code: 500
+Response Body: <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Internal Server Error</pre>
+</body>
+</html>

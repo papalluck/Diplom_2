@@ -1,0 +1,5 @@
+GET https://stellarburgers.nomoreparties.site/api/orders
+Headers: None
+Body: None
+Response Code: 401
+Response Body: {"success":false,"message":"You should be authorised"}

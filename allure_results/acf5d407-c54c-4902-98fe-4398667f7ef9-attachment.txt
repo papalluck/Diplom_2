@@ -1,0 +1,3 @@
+INFO:api_utils:Выполнение POST запроса к https://stellarburgers.nomoreparties.site/api/auth/register (попытка 1)
+INFO:api_utils:Сообщение об ошибке: Email, password and name are required fields
+INFO:api_utils:Проверено, что нельзя создать пользователя без поля name.

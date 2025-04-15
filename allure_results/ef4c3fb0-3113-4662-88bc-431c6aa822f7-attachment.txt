@@ -1,0 +1,6 @@
+[32mINFO    [0m api_utils:conftest.py:41 Пользователь o5ymkjub0at@mail.ru успешно зарегистрирован.
+[32mINFO    [0m api_utils:conftest.py:64 Пользователь o5ymkjub0at@mail.ru успешно авторизован.
+[32mINFO    [0m api_utils:conftest.py:65 Ответ сервера при авторизации: {'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmUyNTFmOWVkMjgwMDAxYjVjNGRhYiIsImlhdCI6MTc0NDcwODg5NiwiZXhwIjoxNzQ0NzEwMDk2fQ.vmCsKMxTD4fo16snNMoOVxOy2E7uixky2Ud4Yz-sPSk', 'refreshToken': 'b5e3cb2a1bf9564af901344df97e78ca43a3fad7a099023fe3da5933de76b96ef7abc974c6fb5ffc', 'user': {'email': 'o5ymkjub0at@mail.ru', 'name': 'ZKIpIhPz'}}
+[32mINFO    [0m api_utils:api_utils.py:19 Выполнение POST запроса к https://stellarburgers.nomoreparties.site/api/auth/login (попытка 1)
+[32mINFO    [0m api_utils:test_user_login.py:27 Успешный вход пользователя o5ymkjub0at@mail.ru.
+[32mINFO    [0m api_utils:conftest.py:84 Пользователь o5ymkjub0at@mail.ru успешно удален.

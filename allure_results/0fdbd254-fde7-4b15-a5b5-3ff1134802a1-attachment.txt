@@ -1,0 +1,6 @@
+INFO:api_utils:Пользователь o5ymkjub0at@mail.ru успешно зарегистрирован.
+INFO:api_utils:Пользователь o5ymkjub0at@mail.ru успешно авторизован.
+INFO:api_utils:Ответ сервера при авторизации: {'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmUyNTFmOWVkMjgwMDAxYjVjNGRhYiIsImlhdCI6MTc0NDcwODg5NiwiZXhwIjoxNzQ0NzEwMDk2fQ.vmCsKMxTD4fo16snNMoOVxOy2E7uixky2Ud4Yz-sPSk', 'refreshToken': 'b5e3cb2a1bf9564af901344df97e78ca43a3fad7a099023fe3da5933de76b96ef7abc974c6fb5ffc', 'user': {'email': 'o5ymkjub0at@mail.ru', 'name': 'ZKIpIhPz'}}
+INFO:api_utils:Выполнение POST запроса к https://stellarburgers.nomoreparties.site/api/auth/login (попытка 1)
+INFO:api_utils:Успешный вход пользователя o5ymkjub0at@mail.ru.
+INFO:api_utils:Пользователь o5ymkjub0at@mail.ru успешно удален.

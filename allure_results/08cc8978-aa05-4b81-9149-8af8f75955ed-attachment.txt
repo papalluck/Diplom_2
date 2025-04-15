@@ -1,0 +1,6 @@
+[32mINFO    [0m api_utils:conftest.py:41 Пользователь dtxbvkk@mail.ru успешно зарегистрирован.
+[32mINFO    [0m api_utils:conftest.py:64 Пользователь dtxbvkk@mail.ru успешно авторизован.
+[32mINFO    [0m api_utils:conftest.py:65 Ответ сервера при авторизации: {'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmUyNTFiOWVkMjgwMDAxYjVjNGQ5ZiIsImlhdCI6MTc0NDcwODg5MiwiZXhwIjoxNzQ0NzEwMDkyfQ.fr3ISfPIcBuSIozYVex5LpfzZ1nvyTde1C5KgX-GdtM', 'refreshToken': 'cbc6331f0c08e511d371ccd06be4b0721c6460a17dca9c76b72f19cb5b4ee377f12a744ff35325ec', 'user': {'email': 'dtxbvkk@mail.ru', 'name': 'ZXQGbvRa'}}
+[32mINFO    [0m api_utils:api_utils.py:19 Выполнение GET запроса к https://stellarburgers.nomoreparties.site/api/orders (попытка 1)
+[32mINFO    [0m api_utils:test_get_user_orders.py:26 Успешно получены заказы пользователя (с авторизацией).
+[32mINFO    [0m api_utils:conftest.py:84 Пользователь dtxbvkk@mail.ru успешно удален.

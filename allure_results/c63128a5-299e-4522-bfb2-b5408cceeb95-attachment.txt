@@ -1,0 +1,7 @@
+INFO:api_utils:Пользователь vqbqbc.xp@mail.ru успешно зарегистрирован.
+INFO:api_utils:Пользователь vqbqbc.xp@mail.ru успешно авторизован.
+INFO:api_utils:Ответ сервера при авторизации: {'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmUyNTI0OWVkMjgwMDAxYjVjNGRiNiIsImlhdCI6MTc0NDcwODkwMCwiZXhwIjoxNzQ0NzEwMTAwfQ.oyUQvViQEkfmyzswTUY04NHd5vj-cFou_nTI6Bp1NC4', 'refreshToken': 'e35f33f017bd38d158e8db751e080ae13aa87df2d27ce77b03c40d87b2b1a1d9203712aae9414a27', 'user': {'email': 'vqbqbc.xp@mail.ru', 'name': 'TaXvRtLQcI'}}
+INFO:api_utils:Новые данные пользователя: {'email': '65.szp5@mail.ru', 'name': 'Allison Hill', 'password': '36QMxBn'}
+INFO:api_utils:Выполнение PATCH запроса к https://stellarburgers.nomoreparties.site/api/auth/user (попытка 1)
+INFO:api_utils:Профиль пользователя vqbqbc.xp@mail.ru успешно обновлен.
+INFO:api_utils:Пользователь 65.szp5@mail.ru успешно удален.

@@ -1,0 +1,2 @@
+[32mINFO    [0m api_utils:api_utils.py:19 Выполнение GET запроса к https://stellarburgers.nomoreparties.site/api/orders (попытка 1)
+[32mINFO    [0m api_utils:test_get_user_orders.py:36 Сообщение об ошибке: You should be authorised

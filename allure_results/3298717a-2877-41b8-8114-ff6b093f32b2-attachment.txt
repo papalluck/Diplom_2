@@ -1,0 +1,4 @@
+INFO:api_utils:Выполнение POST запроса к https://stellarburgers.nomoreparties.site/api/auth/register (попытка 1)
+INFO:api_utils:Выполнение POST запроса к https://stellarburgers.nomoreparties.site/api/auth/register (попытка 1)
+INFO:api_utils:Сообщение об ошибке: User already exists
+INFO:api_utils:Проверено, что нельзя зарегистрировать пользователя 4qhzsv7isipyg.p@mail.ru повторно.
