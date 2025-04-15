@@ -1,0 +1,6 @@
+INFO:api_utils:Пользователь i5ca7rbkwbrorbo@mail.ru успешно зарегистрирован.
+INFO:api_utils:Пользователь i5ca7rbkwbrorbo@mail.ru успешно авторизован.
+INFO:api_utils:Ответ сервера при авторизации: {'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmUyNTIyOWVkMjgwMDAxYjVjNGRiMyIsImlhdCI6MTc0NDcwODg5OCwiZXhwIjoxNzQ0NzEwMDk4fQ.3a96XqpGqwdvls4fguE_2XLQcFRD4o-2Xt7JctCm7nU', 'refreshToken': '7d69f7dfa62d326b50c3f0a2adebfbeb58f9e9cb358e6769c72303e6ee20fd50803355f1dde174a6', 'user': {'email': 'i5ca7rbkwbrorbo@mail.ru', 'name': 'QLgvoq'}}
+INFO:api_utils:Выполнение GET запроса к https://stellarburgers.nomoreparties.site/api/auth/user (попытка 1)
+INFO:api_utils:Успешно получен профиль пользователя i5ca7rbkwbrorbo@mail.ru (с авторизацией).
+INFO:api_utils:Пользователь i5ca7rbkwbrorbo@mail.ru успешно удален.

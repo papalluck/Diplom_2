@@ -1,0 +1,5 @@
+POST https://stellarburgers.nomoreparties.site/api/auth/register
+Headers: None
+Body: {'email': 'ulbu99k7n8np@mail.ru', 'name': 'sgKVYxoJ'}
+Response Code: 403
+Response Body: {"success":false,"message":"Email, password and name are required fields"}

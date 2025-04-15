@@ -1,0 +1,3 @@
+[32mINFO    [0m api_utils:api_utils.py:19 Выполнение POST запроса к https://stellarburgers.nomoreparties.site/api/auth/login (попытка 1)
+[32mINFO    [0m api_utils:test_user_login.py:52 Сообщение об ошибке: email or password are incorrect
+[32mINFO    [0m api_utils:test_user_login.py:54 Проверено, что вход с неверными учетными данными не удается.

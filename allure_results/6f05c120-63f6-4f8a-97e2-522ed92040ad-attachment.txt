@@ -1,0 +1,3 @@
+[32mINFO    [0m api_utils:api_utils.py:19 Выполнение POST запроса к https://stellarburgers.nomoreparties.site/api/auth/register (попытка 1)
+[32mINFO    [0m api_utils:test_user_creation.py:67 Сообщение об ошибке: Email, password and name are required fields
+[32mINFO    [0m api_utils:test_user_creation.py:69 Проверено, что нельзя создать пользователя без поля password.

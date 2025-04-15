@@ -1,0 +1,7 @@
+[32mINFO    [0m api_utils:conftest.py:41 Пользователь vqbqbc.xp@mail.ru успешно зарегистрирован.
+[32mINFO    [0m api_utils:conftest.py:64 Пользователь vqbqbc.xp@mail.ru успешно авторизован.
+[32mINFO    [0m api_utils:conftest.py:65 Ответ сервера при авторизации: {'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmUyNTI0OWVkMjgwMDAxYjVjNGRiNiIsImlhdCI6MTc0NDcwODkwMCwiZXhwIjoxNzQ0NzEwMTAwfQ.oyUQvViQEkfmyzswTUY04NHd5vj-cFou_nTI6Bp1NC4', 'refreshToken': 'e35f33f017bd38d158e8db751e080ae13aa87df2d27ce77b03c40d87b2b1a1d9203712aae9414a27', 'user': {'email': 'vqbqbc.xp@mail.ru', 'name': 'TaXvRtLQcI'}}
+[32mINFO    [0m api_utils:test_user_profile.py:49 Новые данные пользователя: {'email': '65.szp5@mail.ru', 'name': 'Allison Hill', 'password': '36QMxBn'}
+[32mINFO    [0m api_utils:api_utils.py:19 Выполнение PATCH запроса к https://stellarburgers.nomoreparties.site/api/auth/user (попытка 1)
+[32mINFO    [0m api_utils:test_user_profile.py:59 Профиль пользователя vqbqbc.xp@mail.ru успешно обновлен.
+[32mINFO    [0m api_utils:conftest.py:84 Пользователь 65.szp5@mail.ru успешно удален.

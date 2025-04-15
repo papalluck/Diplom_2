@@ -1,0 +1,8 @@
+INFO:api_utils:Пользователь .xemkvt03z0o20@mail.ru успешно зарегистрирован.
+INFO:api_utils:Пользователь .xemkvt03z0o20@mail.ru успешно авторизован.
+INFO:api_utils:Ответ сервера при авторизации: {'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmUyNTI2OWVkMjgwMDAxYjVjNGRiOSIsImlhdCI6MTc0NDcwODkwMiwiZXhwIjoxNzQ0NzEwMTAyfQ.wizMI902WetEKf5YzyHfwmxkfIIQGaUoFzgIZ-oH5v0', 'refreshToken': 'f34d1736ce4f00758b38a8e45f243aa7b40739d598649da4cdc2fde0645ce6e3f9afba700f232903', 'user': {'email': '.xemkvt03z0o20@mail.ru', 'name': 'FUtVjDdAhB'}}
+INFO:api_utils:Выполнение POST запроса к https://stellarburgers.nomoreparties.site/api/auth/register (попытка 1)
+INFO:api_utils:Выполнение PATCH запроса к https://stellarburgers.nomoreparties.site/api/auth/user (попытка 1)
+INFO:api_utils:Сообщение об ошибке: User with such email already exists
+INFO:api_utils:Проверено, что нельзя обновить email на существующий.
+INFO:api_utils:Пользователь .xemkvt03z0o20@mail.ru успешно удален.

@@ -1,0 +1,7 @@
+[32mINFO    [0m api_utils:conftest.py:41 Пользователь o40o85bfkm0a@mail.ru успешно зарегистрирован.
+[32mINFO    [0m api_utils:conftest.py:64 Пользователь o40o85bfkm0a@mail.ru успешно авторизован.
+[32mINFO    [0m api_utils:conftest.py:65 Ответ сервера при авторизации: {'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmUyNTE4OWVkMjgwMDAxYjVjNGQ5OSIsImlhdCI6MTc0NDcwODg4OCwiZXhwIjoxNzQ0NzEwMDg4fQ.3T9GrQNI5zzkqn9gaJ66dsbaMks6truXsUAesbiWjpQ', 'refreshToken': '7fe05db5c11075b90f7b28db13066ab45a1696c254c694124cb9d218787c9a5efc0c5a3beb44afb8', 'user': {'email': 'o40o85bfkm0a@mail.ru', 'name': 'svkviMBPSm'}}
+[32mINFO    [0m api_utils:test_create_order.py:57 Payload для создания заказа с авторизацией, но без ингредиентов: {'ingredients': []}
+[32mINFO    [0m api_utils:test_create_order.py:58 Заголовки для создания заказа с авторизацией, но без ингредиентов: {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmUyNTE4OWVkMjgwMDAxYjVjNGQ5OSIsImlhdCI6MTc0NDcwODg4OCwiZXhwIjoxNzQ0NzEwMDg4fQ.3T9GrQNI5zzkqn9gaJ66dsbaMks6truXsUAesbiWjpQ', 'Content-Type': 'application/json'}
+[32mINFO    [0m api_utils:api_utils.py:19 Выполнение POST запроса к https://stellarburgers.nomoreparties.site/api/orders (попытка 1)
+[32mINFO    [0m api_utils:conftest.py:84 Пользователь o40o85bfkm0a@mail.ru успешно удален.

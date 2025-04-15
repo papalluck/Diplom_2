@@ -1,0 +1,8 @@
+[32mINFO    [0m api_utils:conftest.py:41 Пользователь .xemkvt03z0o20@mail.ru успешно зарегистрирован.
+[32mINFO    [0m api_utils:conftest.py:64 Пользователь .xemkvt03z0o20@mail.ru успешно авторизован.
+[32mINFO    [0m api_utils:conftest.py:65 Ответ сервера при авторизации: {'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmUyNTI2OWVkMjgwMDAxYjVjNGRiOSIsImlhdCI6MTc0NDcwODkwMiwiZXhwIjoxNzQ0NzEwMTAyfQ.wizMI902WetEKf5YzyHfwmxkfIIQGaUoFzgIZ-oH5v0', 'refreshToken': 'f34d1736ce4f00758b38a8e45f243aa7b40739d598649da4cdc2fde0645ce6e3f9afba700f232903', 'user': {'email': '.xemkvt03z0o20@mail.ru', 'name': 'FUtVjDdAhB'}}
+[32mINFO    [0m api_utils:api_utils.py:19 Выполнение POST запроса к https://stellarburgers.nomoreparties.site/api/auth/register (попытка 1)
+[32mINFO    [0m api_utils:api_utils.py:19 Выполнение PATCH запроса к https://stellarburgers.nomoreparties.site/api/auth/user (попытка 1)
+[32mINFO    [0m api_utils:test_user_profile.py:100 Сообщение об ошибке: User with such email already exists
+[32mINFO    [0m api_utils:test_user_profile.py:102 Проверено, что нельзя обновить email на существующий.
+[32mINFO    [0m api_utils:conftest.py:84 Пользователь .xemkvt03z0o20@mail.ru успешно удален.

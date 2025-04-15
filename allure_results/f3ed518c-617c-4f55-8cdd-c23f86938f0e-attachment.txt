@@ -1,0 +1,5 @@
+GET https://stellarburgers.nomoreparties.site/api/auth/user
+Headers: {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmUyNTIyOWVkMjgwMDAxYjVjNGRiMyIsImlhdCI6MTc0NDcwODg5OCwiZXhwIjoxNzQ0NzEwMDk4fQ.3a96XqpGqwdvls4fguE_2XLQcFRD4o-2Xt7JctCm7nU'}
+Body: None
+Response Code: 200
+Response Body: {"success":true,"user":{"email":"i5ca7rbkwbrorbo@mail.ru","name":"QLgvoq"}}

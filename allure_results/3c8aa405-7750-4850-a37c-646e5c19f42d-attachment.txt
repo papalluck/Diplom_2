@@ -1,0 +1,2 @@
+[32mINFO    [0m api_utils:api_utils.py:19 Выполнение POST запроса к https://stellarburgers.nomoreparties.site/api/auth/register (попытка 1)
+[32mINFO    [0m api_utils:test_user_creation.py:32 Пользователь 17v7sfk0a2mf@mail.ru успешно зарегистрирован.

@@ -1,0 +1,2 @@
+INFO:api_utils:Выполнение GET запроса к https://stellarburgers.nomoreparties.site/api/orders (попытка 1)
+INFO:api_utils:Сообщение об ошибке: You should be authorised

@@ -1,0 +1,2 @@
+INFO:api_utils:Выполнение POST запроса к https://stellarburgers.nomoreparties.site/api/auth/register (попытка 1)
+INFO:api_utils:Пользователь 17v7sfk0a2mf@mail.ru успешно зарегистрирован.
