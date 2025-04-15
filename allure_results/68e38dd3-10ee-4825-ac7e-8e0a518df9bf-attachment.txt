@@ -1,6 +1,0 @@
-INFO:api_utils:Пользователь 9u99ndo1yjje230@mail.ru успешно зарегистрирован.
-INFO:api_utils:Пользователь 9u99ndo1yjje230@mail.ru успешно авторизован.
-INFO:api_utils:Ответ сервера при авторизации: {'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmQyMGU1OWVkMjgwMDAxYjVjMzViNiIsImlhdCI6MTc0NDY0MjI3OCwiZXhwIjoxNzQ0NjQzNDc4fQ.xrF-xNXhjLWf7FD2Wjg6u7YW2s5xqahcrqtP6eeFAV4', 'refreshToken': '583817b2aabeae934778764eb110213236ef8da3945e355cf26b23bdb1bb6d96d07d2a3356180d65', 'user': {'email': '9u99ndo1yjje230@mail.ru', 'name': 'FwVCGgSEz'}}
-INFO:api_utils:Выполнение POST запроса к https://stellarburgers.nomoreparties.site/api/auth/login (попытка 1)
-INFO:api_utils:Успешный вход пользователя 9u99ndo1yjje230@mail.ru.
-INFO:api_utils:Пользователь 9u99ndo1yjje230@mail.ru успешно удален.

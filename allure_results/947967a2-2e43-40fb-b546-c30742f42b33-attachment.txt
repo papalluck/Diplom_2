@@ -1,5 +1,0 @@
-PATCH https://stellarburgers.nomoreparties.site/api/auth/user
-Headers: {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmQyMGViOWVkMjgwMDAxYjVjMzVjMiIsImlhdCI6MTc0NDY0MjI4MywiZXhwIjoxNzQ0NjQzNDgzfQ.-sDQ3ZqT1iZCThaCatTNPj4yPu0pQZyN7FG9lZWW12w', 'Content-Type': 'application/json'}
-Body: {'email': 'df69nh8xxg83ou@mail.ru', 'name': 'Noah Rhodes', 'password': '7dl2nc'}
-Response Code: 403
-Response Body: {"success":false,"message":"User with such email already exists"}

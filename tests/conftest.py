@@ -18,6 +18,8 @@ def get_ingredients():
     ingredient_ids = get_ingredient_ids_from_api()
     if ingredient_ids is None:
         pytest.fail("Не удалось получить список ингредиентов из API.")
+    if len(ingredient_ids) < 2:
+        pytest.skip("Недостаточно ингредиентов для создания заказа.")
     return ingredient_ids
 
 @pytest.fixture(scope="function")

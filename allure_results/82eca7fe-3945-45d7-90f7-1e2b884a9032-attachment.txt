@@ -1,7 +1,0 @@
-INFO:api_utils:Пользователь 2f.ycoq9@mail.ru успешно зарегистрирован.
-INFO:api_utils:Пользователь 2f.ycoq9@mail.ru успешно авторизован.
-INFO:api_utils:Ответ сервера при авторизации: {'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmQyMGU5OWVkMjgwMDAxYjVjMzViZiIsImlhdCI6MTc0NDY0MjI4MSwiZXhwIjoxNzQ0NjQzNDgxfQ.1Rmw1eIv8rxiC-xvtjEg6uYwyGVK18kJ7i25qyL3EPA', 'refreshToken': 'f3deaeab8a8643a52bc6fde4f206bc548c798645c3ae87a92dcaa0b0fa580e80f736399a9ad1e2ce', 'user': {'email': '2f.ycoq9@mail.ru', 'name': 'mUiptggR'}}
-INFO:api_utils:Новые данные пользователя: {'email': 'nkjcnmp4mjbz@mail.ru', 'name': 'Allison Hill', 'password': 'q5je88a'}
-INFO:api_utils:Выполнение PATCH запроса к https://stellarburgers.nomoreparties.site/api/auth/user (попытка 1)
-INFO:api_utils:Профиль пользователя 2f.ycoq9@mail.ru успешно обновлен.
-INFO:api_utils:Пользователь nkjcnmp4mjbz@mail.ru успешно удален.

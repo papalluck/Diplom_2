@@ -1,5 +1,0 @@
-POST https://stellarburgers.nomoreparties.site/api/auth/login
-Headers: None
-Body: {'email': 'wue9qbrcwpee@mail.ru', 'password': 'wrong_password'}
-Response Code: 401
-Response Body: {"success":false,"message":"email or password are incorrect"}

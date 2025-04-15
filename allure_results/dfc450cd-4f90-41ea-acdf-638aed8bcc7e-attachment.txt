@@ -1,4 +1,0 @@
-[32mINFO    [0m api_utils:api_utils.py:19 Выполнение POST запроса к https://stellarburgers.nomoreparties.site/api/auth/register (попытка 1)
-[32mINFO    [0m api_utils:api_utils.py:19 Выполнение POST запроса к https://stellarburgers.nomoreparties.site/api/auth/register (попытка 1)
-[32mINFO    [0m api_utils:test_user_creation.py:52 Сообщение об ошибке: User already exists
-[32mINFO    [0m api_utils:test_user_creation.py:54 Проверено, что нельзя зарегистрировать пользователя 2i4uhi1kkvxb5vc@mail.ru повторно.

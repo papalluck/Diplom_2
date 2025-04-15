@@ -1,6 +1,0 @@
-INFO:api_utils:Пользователь hccutbfi3aufbou@mail.ru успешно зарегистрирован.
-INFO:api_utils:Пользователь hccutbfi3aufbou@mail.ru успешно авторизован.
-INFO:api_utils:Ответ сервера при авторизации: {'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmQyMGUyOWVkMjgwMDAxYjVjMzVhZSIsImlhdCI6MTc0NDY0MjI3NCwiZXhwIjoxNzQ0NjQzNDc0fQ.OxecHSdfCB7rCUmuGHiUoqAxm51jeHYdwDuYmGDE9WY', 'refreshToken': '1029524ded5ad0c2e8f453f1fe192a0b6c3e3eed2b11ce683107a2dd8e587f2b3836eb8fdef0a9a6', 'user': {'email': 'hccutbfi3aufbou@mail.ru', 'name': 'iUwvHpV'}}
-INFO:api_utils:Выполнение GET запроса к https://stellarburgers.nomoreparties.site/api/orders (попытка 1)
-INFO:api_utils:Успешно получены заказы пользователя (с авторизацией).
-INFO:api_utils:Пользователь hccutbfi3aufbou@mail.ru успешно удален.

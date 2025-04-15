@@ -1,6 +1,0 @@
-[32mINFO    [0m api_utils:conftest.py:39 Пользователь hccutbfi3aufbou@mail.ru успешно зарегистрирован.
-[32mINFO    [0m api_utils:conftest.py:62 Пользователь hccutbfi3aufbou@mail.ru успешно авторизован.
-[32mINFO    [0m api_utils:conftest.py:63 Ответ сервера при авторизации: {'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmQyMGUyOWVkMjgwMDAxYjVjMzVhZSIsImlhdCI6MTc0NDY0MjI3NCwiZXhwIjoxNzQ0NjQzNDc0fQ.OxecHSdfCB7rCUmuGHiUoqAxm51jeHYdwDuYmGDE9WY', 'refreshToken': '1029524ded5ad0c2e8f453f1fe192a0b6c3e3eed2b11ce683107a2dd8e587f2b3836eb8fdef0a9a6', 'user': {'email': 'hccutbfi3aufbou@mail.ru', 'name': 'iUwvHpV'}}
-[32mINFO    [0m api_utils:api_utils.py:19 Выполнение GET запроса к https://stellarburgers.nomoreparties.site/api/orders (попытка 1)
-[32mINFO    [0m api_utils:test_get_user_orders.py:26 Успешно получены заказы пользователя (с авторизацией).
-[32mINFO    [0m api_utils:conftest.py:82 Пользователь hccutbfi3aufbou@mail.ru успешно удален.

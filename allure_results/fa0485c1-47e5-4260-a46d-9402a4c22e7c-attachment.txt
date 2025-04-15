@@ -1,3 +1,0 @@
-INFO:api_utils:Выполнение PATCH запроса к https://stellarburgers.nomoreparties.site/api/auth/user (попытка 1)
-INFO:api_utils:Сообщение об ошибке: You should be authorised
-INFO:api_utils:Проверено, что для обновления профиля пользователя требуется авторизация.
