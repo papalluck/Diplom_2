@@ -1,0 +1,3 @@
+from config import VALID_INGREDIENTS
+
+VALID_INGREDIENTS_PAYLOAD = {"ingredients": VALID_INGREDIENTS}
